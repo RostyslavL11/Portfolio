@@ -9,12 +9,14 @@
     height: 360px;
     z-index: 3;
     &__link {
+        transform: rotate(-90deg);
+        transition-duration: 1s;
+        &:hover {
+            transform: rotate(0deg);
+        }
         img {
             width: 20px;
             height: 20px;
-        }
-        &_telegram {
-            transform: rotate(-90deg);
         }
     }
     &__divider {

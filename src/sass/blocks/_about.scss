@@ -1,65 +1,76 @@
 .about {
     padding-top: 120px;
-    padding-bottom: 120px;
-    &__title {
-        margin-top: 10px;
-    }
     &__wrapper {
-        padding-right: 100px;
         display: grid;
-        grid-template-columns: 400px 1fr;
-        gap: 70px;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: minmax(245px, auto) minmax(245px, auto);
+        grid-auto-rows: minmax(245px, auto);
+        column-gap: 70px;
+        row-gap: 40px;
         position: relative;
     }
-    &__img {
-        max-height: 600px;
-    }
-    &__subtitle {
-        position: relative;
-        padding-left: 10px;
-        @include before_circle;
-    }
-    &__divider {
-        @include divider;
-        margin: 0;
+    &__photo {
+        grid-row: 1/3;
+        img {
+            width: 100%;
+        }
     }
     &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__text {
         margin-top: 20px;
-        color: #000;
+        color: #000000;
         font-size: 14px;
         font-weight: 500;
     }
-    &__abilities {
-        margin-top: 40px;
+    &__skills {
         display: grid;
-        grid-template-columns: 260px 260px;
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+        grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;
-    }
-    &__item {
-        display: grid;
-        grid-template-columns: 40px 200px;
-        column-gap: 20px;
-    }
-    &__text {
-        margin-top: 6px;
-        width: 200px;
-        color: #000;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: normal;
-    }
-    &__icon {
-        width: 25px;
-        position: relative;
-        padding-top: 16px;
-        padding-left: 15px;
-        @include before_circle;
-        &:before {
-            top: 0;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
         }
-        &_mobile {
-            padding-left: 19px;
+        &-circle {
+            position: relative;
+            padding-top: 15px;
+            padding-left: 15px;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+            img {
+                max-width: 255px;
+            }
+        }
+        &-text {
+            margin-top: 6px;
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
         }
     }
+
+    // &__subtitle {
+    //     margin-top: 10px;
+    // }
+
+    // &__icon {
+    //
+    //
+
+    // }
 }

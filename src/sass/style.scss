@@ -16,7 +16,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
     margin: 0;
 }
 
@@ -41,3 +43,4 @@ p {
 @import "blocks/resume";
 @import "blocks/skills";
 @import "blocks/portfolio";
+@import "blocks/price";

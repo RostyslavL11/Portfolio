@@ -84,11 +84,15 @@
         &__wrapper {
             grid-template-columns: 300px 380px;
         }
+        &__photo {
+            grid-row: unset;
+        }
         &__skills {
-            grid-template-columns: 380px;
+            grid-template-columns: repeat(auto-fill, 350px);
             grid-auto-rows: minmax(115px, auto);
+            grid-column: 1/3;
             &-item {
-                grid-template-columns: 40px 320px;
+                grid-template-columns: 40px 290px;
                 column-gap: 20px;
             }
         }
@@ -155,6 +159,19 @@
 }
 
 @media (max-width: 768px) {
+    .btn {
+        &:hover {
+            transform: none;
+        }
+    }
+    .portfolio {
+        &__item {
+            &:hover {
+                transform: none;
+                filter: none;
+            }
+        }
+    }
     .container {
         max-width: 560px;
     }
@@ -181,7 +198,8 @@
             grid-row: unset;
         }
         &__skills {
-            grid-template-columns: repeat(2, 260px);
+            grid-template-columns: repeat(2, 270px);
+            grid-column: unset;
             &-item {
                 grid-template-columns: 40px 200px;
             }

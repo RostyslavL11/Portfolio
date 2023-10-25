@@ -17,3 +17,17 @@ const counters = document.querySelectorAll('.skills__range-counter'),
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 })
+
+$('form').submit(function (e) {
+    e.preventDefault();
+
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+        $('form').trigger('reset')
+    })
+    return false;
+});

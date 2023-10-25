@@ -504,7 +504,7 @@
                         Залиште ваші дані і я сам вам напишу
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form action="#" class="contacts__form" id="contacts">
                         <div class="contacts__input">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше ім'я</label>
@@ -515,7 +515,7 @@
                         </div>
 
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea required name="text" minlength="5" id="text"></textarea>
                             <label for="text">Ваше повідомлення</label>
                         </div>
                         <div class="contacts__triggers">
@@ -532,6 +532,8 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>

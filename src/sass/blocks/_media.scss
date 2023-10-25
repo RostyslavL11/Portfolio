@@ -172,6 +172,22 @@
             }
         }
     }
+    .menu {
+        &__link {
+            &:hover {
+                &:before {
+                    background-color: $main-color;
+                }
+            }
+        }
+        &__social {
+            a {
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
     .container {
         max-width: 560px;
     }
@@ -271,6 +287,11 @@
         }
         &__link {
             margin: 0 10px;
+            img {
+                &:hover {
+                    transform: none;
+                }
+            }
         }
     }
 }

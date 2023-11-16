@@ -32,7 +32,7 @@
         margin-top: 20px;
         color: #000000;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: $description-fw;
     }
     &__skills {
         display: grid;
@@ -62,7 +62,7 @@
             color: #000;
             font-size: 12px;
             font-weight: 500;
-            line-height: normal;
+            font-weight: $description-fw;
         }
     }
 

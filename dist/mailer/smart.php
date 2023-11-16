@@ -28,10 +28,10 @@ $mail->addAddress('rostikl1994@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Дані з сайту "Portfolio"';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
+	Ім*я: ' . $name . ' <br>
 	Текст: ' . $text . '<br>
 	E-mail: ' . $email . '';
 

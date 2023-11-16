@@ -1,8 +1,18 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url("../img/main_bg.jpg") no-repeat 50% / cover;
+    // background: url("../img/main_bg.jpg") no-repeat 50% / cover;
+
+    background-image: url("../img/DSC_1618.jpg");
+    background-image: url("../img/DSC_1611.jpg");
+    background-image: url("../img/one.jpg");
+    // background-image: url("../img/two.jpg");
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-position-x: 25%;
+    background-position-y: 25%;
     padding-top: 205px;
+    background-size: cover;
     &__title {
         width: 535px;
         margin-top: 10px;
